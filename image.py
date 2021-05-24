@@ -46,4 +46,8 @@ if __name__ == '__main__':
     filterpercent = int(input())
     obj = Album(album_name, img_list)
     result = obj.calculate_coordinates(filterpercent, imagetype)
-    print(' '.join(map(str, result)))
+    print(' '.join(map(str, result[:3])))
+    print(' '.join(map(str, result[3:6])))
+    print(' '.join(map(str, result[6:9])))
+    # for i in result:
+    #     print(i)
